@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.splash.SplashActivity"
+    android:background="@color/orange"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/txtVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_12"
+        android:layout_marginTop="40dp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Version: \n0.0.1"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/match_constraint"
+        android:layout_marginStart="@dimen/size_88"
+        android:layout_marginTop="@dimen/size_188"
+        android:layout_marginEnd="@dimen/size_88"
+        android:importantForAccessibility="no"
+        android:src="@drawable/track_gps_2"
+        app:layout_constraintDimensionRatio="152:172"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_32"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:importantForAccessibility="no"
+        android:text="@string/txt_from"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_12"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_splash_footer_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Designed By:"/>
+
+    <ImageView
+        android:id="@+id/imageView_splash_footer_logo"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/size_56"
+        android:layout_marginBottom="@dimen/size_60"
+        android:importantForAccessibility="no"
+        android:src="@drawable/logo_applabs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="104:20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

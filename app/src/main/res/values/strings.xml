@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TrackMyRoutes</string>
+
+    <!-- SplashActivity String resources   -->
+    <string name="txt_from">Designed by:</string>
+    <string name="txt_designed_by">Designed by \n<b>Giovani Leite Vitor</b></string>
+
+</resources>
